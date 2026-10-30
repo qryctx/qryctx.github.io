@@ -29,7 +29,7 @@ jobs:
       - name: Prepare public files
         run: |
           mkdir _site
-          cp index.html styles.css favicon.svg .nojekyll _site/
+          cp index.html styles.css theme.js favicon.svg .nojekyll _site/
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:

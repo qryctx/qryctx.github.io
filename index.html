@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1b1c1b" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f7f5ef">
   <meta name="description" content="phantom 的个人空间。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="phantom">
@@ -13,11 +12,24 @@
   <meta property="og:url" content="https://qryctx.github.io/">
   <link rel="canonical" href="https://qryctx.github.io/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <script src="./theme.js"></script>
   <link rel="stylesheet" href="./styles.css">
   <title>phantom</title>
 </head>
 <body>
-  <header class="site-header"><a class="wordmark" href="./" aria-label="phantom 首页">p.</a><span class="handle">@qryctx</span></header>
+  <header class="site-header">
+    <div class="identity">
+      <a class="wordmark" href="./" aria-label="phantom 首页">p.</a>
+      <span class="handle">@qryctx</span>
+    </div>
+    <div class="appearance" hidden>
+      <select aria-label="外观" id="appearance">
+        <option value="system">跟随系统</option>
+        <option value="light">浅色</option>
+        <option value="dark">深色</option>
+      </select>
+    </div>
+  </header>
   <main>
     <p class="eyebrow">PERSONAL SPACE</p>
     <h1>phantom<span aria-hidden="true">.</span></h1>
